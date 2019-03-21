@@ -1,0 +1,73 @@
+/* reset css */
+@charset "utf-8";
+/* CSS Document */
+
+/* base */
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,'굴림',Gulim,AppleGothic,sans-serif; font-size:12px; color: #333}
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,nav,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em; text-align: justify}
+.hidden{position: absolute; width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{color:#333;text-decoration:none}
+
+/* skipNav */
+
+#skipNav{position:relative;width:100%;overflow:hidden;}
+   #skipNav a{display:block; height:1px; margin-bottom:-1px; 
+      overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:12px;}
+   #skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+     display:block;height:auto;padding:5px 0; background:#f2f2f2;}
+
+/* header */
+
+#wrap{width: 100%; overflow: hidden}
+
+#headerArea{background: white; position: fixed; width: 100%; z-index:100; left:0; top:0;border-bottom: 2px solid #10d368}
+#headerArea .headerInner{width: 1000px; margin: 0 auto;}
+
+#headerArea .logo{width:145px; margin: 70px 0 20px 35px; float: left}
+#headerArea .headerRight{width: 815px; float: right}
+#headerArea .headerRight .topMenu{}
+#headerArea .headerRight .topMenu ul{overflow: hidden; margin: 17px 0 5px 485px;}
+#headerArea .headerRight .topMenu ul li{float: left; margin-right: 10px}
+
+/* gnb */
+	
+.menu_box{position:absolute; z-index: 10; left:0; top:193px; background:#fff; border-bottom:2px solid #ccc; width:100%; height:120px;display: none; border-bottom: 3px solid #5af920}
+
+#navArea{clear:both;width:1000px;padding-top:70px;} 
+
+  
+#navArea ul.dropdownmenu{float:left; margin-left: 47px; margin-top: 12px}
+#navArea ul.dropdownmenu li.gnbmenu{position:relative;float:left;width:127px;height:60px;}
+#navArea ul.dropdownmenu li h3{position:relative;width:127px;height:42px; overflow:hidden}
+#navArea ul.dropdownmenu li a.depth1{position:absolute;display:block;width:127px;height:84px;}
+#navArea ul.dropdownmenu li ul{width:127px;height:75px;position:absolute;z-index: 20; top:35px;left:0;padding:25px ;line-height:1.5em; display: none}
+#navArea ul.dropdownmenu li ul li{text-align:right;margin-right: 28px; margin-bottom: 5px}
+#navArea ul.dropdownmenu li ul li a{color:#666;text-decoration:none; font-size: 12px; display: block; transition: all .5s}
+#navArea ul.dropdownmenu li ul li a:hover{color:#fff; text-decoration:none; font-weight: 700; background: #0ef275; border-radius: 6px}
+
+
+/* footer */
+
+#footerArea{background: #ddefbd; line-height:1;font-family:"noto-demilight";letter-spacing:-1px;font-size:15px; } 
+#footerArea .footerTop{width:100%;max-width:700px;margin:0 auto;z-index:100; padding-top: 25px;}
+#footerArea .footerInner{width:100%;max-width:700px;margin:0 auto;}
+#footerArea .footerInner .footerLogo{float: left; position:relative; padding: 10px 0 10px 30px; margin-left: 50px; left:30px; top:-5px}
+#footerArea .footerInner .footerBottom{float: left; width: 400px; position:relative; margin:15px; padding-left: 30px;}
+#footerArea .footerInner .footerBottom li{margin-bottom:6px;font-size:14px;line-height:16px;color:#d6d6d6;letter-spacing:1px;}
+#footerArea .footerInner .footerBottom li span{font-family:"noto-medium";color:#666;}
+#footerArea #footerCS{clear: both; width:100%;max-width:800px;padding:5px 20px;margin:0 auto;border-top:1px solid #797979;}
+#footerArea #footerCS .copyright{position:relative;padding-left:100px;}
+#footerArea #footerCS .copyright p{font-size:16px;line-height:18px;color:#555; padding: 15px 20px;}
+#footerArea #footerCS .copyright .sns{position:absolute;right:0;top:0; padding-right: 100px;}
+#footerArea #footerCS .copyright .sns::after{display:block;clear:both;content:"";}
+#footerArea #footerCS .copyright .sns li{float:left; border: 2px solid #fff; border-width: 12px; border-radius: 32px; }

@@ -1,0 +1,414 @@
+/* reset css */
+@charset "utf-8";
+/* CSS Document */
+
+/* base */
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-family: '돋음', Dotum, '굴림', Gulim, AppleGothic, sans-serif;
+    font-size: 12px;
+    color: #333
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*font-weight: normal;
+    font-size: 100%*/
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+fieldset,
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+address {
+    font-style: normal
+}
+
+table {
+    border-collapse: collapse
+}
+
+header,
+footer,
+nav,
+section,
+article,
+hgroup,
+aside {
+    display: block
+}
+
+
+li,
+dd {
+    line-height: .5em;
+    text-align: justify
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -1000%;
+    color: #fff;
+}
+
+/* a-style */
+a {
+    color: #333;
+    text-decoration: none
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none
+}
+
+/* skipNav */
+
+#skipNav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+    display: block;
+    height: auto;
+    padding: 5px 0;
+    background: #459b75;
+}
+
+/* header */
+
+#wrap {
+    width: 100%;
+    overflow: hidden
+}
+
+#headerArea {
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid #4fefa7;
+
+}
+
+#headerArea .headerInner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#headerArea .logo {
+    width: 145px;
+    margin: 70px 0 20px 35px;
+    float: left
+}
+
+#headerArea .headerRight {
+    width: 815px;
+    float: right
+}
+
+#headerArea .headerRight .topMenu {}
+
+#headerArea .headerRight .topMenu ul {
+    overflow: hidden;
+    margin: 17px 0 5px 585px;
+}
+
+#headerArea .headerRight .topMenu ul li {
+    float: left;
+    margin-right: 10px
+}
+
+/* gnb */
+
+.menu_box {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 193px;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    height: 120px;
+    display: none;
+    border-bottom: 3px solid #4fefa7
+}
+
+#navArea {
+    clear: both;
+    width: 1000px;
+    padding-top: 70px;
+}
+
+
+#navArea ul.dropdownmenu {
+    float: left;
+    margin-left: 47px;
+    margin-top: 12px
+}
+
+#navArea ul.dropdownmenu li.gnbmenu {
+    position: relative;
+    float: left;
+    width: 127px;
+    height: 60px;
+}
+
+#navArea ul.dropdownmenu li h3 {
+    position: relative;
+    width: 127px;
+    height: 42px;
+    overflow: hidden;
+}
+
+#navArea ul.dropdownmenu li a.Roll2 {
+    position: absolute;
+    text-indent: -999px;
+    display: block;
+    width: 127px;
+    height: 84px;
+}
+
+#navArea ul.dropdownmenu li.m1 a.Roll2 {
+    background: url(../himg/example3.png) 0 0 no-repeat;
+}
+
+#navArea ul.dropdownmenu li.m2 a.Roll2 {
+    background: url(../himg/example_business.png) 0 0 no-repeat;
+}
+
+#navArea ul.dropdownmenu li.m3 a.Roll2 {
+    background: url(../himg/example_activity.png) 0 0 no-repeat;
+}
+
+#navArea ul.dropdownmenu li.m4 a.Roll2 {
+    background: url(../himg/example_alliance.png) 0 0 no-repeat;
+}
+
+#navArea ul.dropdownmenu li.m5 a.Roll2 {
+    background: url(../himg/example_FAQ.png) 0 0 no-repeat;
+}
+
+#navArea ul.dropdownmenu li ul {
+    width: 127px;
+    height: 75px;
+    position: absolute;
+    z-index: 20;
+    top: 35px;
+    left: 0;
+    padding: 25px;
+    line-height: 1.5em;
+    display: none
+}
+
+#navArea ul.dropdownmenu li ul li {
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 8px;
+}
+
+#navArea ul.dropdownmenu li ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    transition: all .5s
+}
+
+#navArea ul.dropdownmenu li ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    background: #4fefa7;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* footer */
+
+#footerArea {
+    width: 100%;
+    height: 200px;
+    background: #82cc93;
+    margin: 0 auto
+}
+
+#footerArea .footerInner {
+    width: 1000px;
+    margin: 0 auto
+}
+
+#footerArea .footerLogo {
+    height: 56px;
+    width: 103px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 40px;
+    margin-right: 50px
+}
+
+#footerArea .footerCenter {
+    width: 644px;
+    float: left;
+    margin-top: 30px
+}
+
+#footerArea .footerCenter .footerTop {
+    overflow: visible;
+    font-size: 0.95em;
+    width: 644px;
+    height: 30px;
+    color: dimgrey;
+    margin-left: 170px 
+}
+
+#footerArea .footerCenter li {
+    float: left;
+    margin-right: 25px;
+    text-align: center;
+}
+
+#footerArea .footerCenter .footerBottom {
+    font-size: 0.95em;
+    width: 644px;
+    height: 12px;
+    text-align: center;
+    color: dimgrey;
+}
+
+#footerArea .footerCenter p {
+    text-align: center
+}
+
+#footerArea .footerRight {
+    width: 150px;
+    float: right
+}
+
+/* top button*/
+.topbtn #toTop {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 125px;
+    left: 50%;
+    margin-left: 500px;
+    overflow: hidden;
+    z-index: 5000;
+}
+
+
+/* button */
+
+.contentArea .menu ul {
+    overflow: hidden;
+    margin-left: 21.5%;
+    float: left;
+    position: absolute;
+
+}
+
+.contentArea .menu li a {
+    display: block;
+    height: 52px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.contentArea .menu li {
+    margin-right: 13px
+}
+
+.contentArea .menu .menu1 {
+    width: 206px;
+    background-image: url(../himg/backimg.PNG);
+    margin-top: 81px;
+    float: left
+}
+
+.contentArea .menu .menu2 {
+    width: 206px;
+    background: url(../himg/key.png);
+    margin-top: 81px;
+    float: left
+}
+
+.contentArea .menu .menu3 {
+    width: 206px;
+    background: url(../himg/key.png);
+    margin-top: 81px;
+    float: left
+}
+
+.contentArea .menu .menu4 {
+    width: 206px;
+    background: url(../himg/key.png);
+    margin-top: 81px;
+    float: left
+}
+
+.contentArea .menu .menu5 {
+    width: 206px;
+    background: url(../himg/key.png);
+    margin-top: 81px;
+    float: left
+}
+
+main {
+  margin: 0;
+  max-width: 70em;
+}
+
+hr{
+    width: 1200px;
+    
+}
+p{
+    font-size: 150%;
+    
+}
+
